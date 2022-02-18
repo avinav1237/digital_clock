@@ -109,13 +109,21 @@ function settime()
     // console.log(j);
     var k=document.getElementById("NapTimeSelector").value;
     var hrr=new Date().getHours();
-    // console.log(hrr);
+    console.log(hrr);
     var temp=document.getElementsByClassName("img-container")[0];
+    if(i==24)
+    i=0;
+    if(j==24)
+    j=0;
+    if(k==0)
+    k=0;
+    // console.log(hrr);
     if(   (i==j || j==k || i==j) && (i!=0 && j!=0 && k!=0))
     {
         console.log("can't have same time");
     }
     // j=hrr;
+  
     else if(i==hrr)
     {
        
